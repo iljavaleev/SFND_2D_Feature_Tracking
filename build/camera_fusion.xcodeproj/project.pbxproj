@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4C9423F7D8F943A997C9EB19 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 814B939DCBD74C62990C7988 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				E9462ABE8F8319749499C666 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		913A322062414373BA6755D1 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C06BCB74C5C04E8DB004A39F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				52809B863BDE2899DF7BFB1B /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				88282DD618234D22AD4BD3FF /* PBXTargetDependency */,
+				EFCEBE7CB1DA4B4F8C9D9B3A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		236EBDF0D42A491998914833 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 97D509D3FAA3406CB65951F5 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/CMakeLists.txt */; };
+		5A130E6B3D8E4CA48FB93A19 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/src/matching2D_Student.cpp */ = {isa = PBXBuildFile; fileRef = 984E608C5CEF4BA694F26697 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/src/matching2D_Student.cpp */; };
+		F4BCD68E99F6423CBA63EA40 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/src/MidTermProject_Camera_Student.cpp */ = {isa = PBXBuildFile; fileRef = 6F1F194E525249D99D15A847 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/src/MidTermProject_Camera_Student.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0F9BDCA202254096BAF6874F /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		92057F7DC6A444F5A973023A /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		EAF1FCE3A3184999A7FEAB47 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		EBC7A19499364479B4CC8135 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1E0F86220CA84F6CB3472EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9A369ACD3644AF8973177E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA69C39E56074F35BA73D9F9;
+			remoteInfo = 2D_feature_tracking;
+		};
+		A0D910882E7745F1BD8DC159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9A369ACD3644AF8973177E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C9423F7D8F943A997C9EB19;
+			remoteInfo = ZERO_CHECK;
+		};
+		F0025A0B29974D2A87226677 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9A369ACD3644AF8973177E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C9423F7D8F943A997C9EB19;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F1F194E525249D99D15A847 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/src/MidTermProject_Camera_Student.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MidTermProject_Camera_Student.cpp; path = src/MidTermProject_Camera_Student.cpp; sourceTree = SOURCE_ROOT; };
+		95BECCDF6C444116A5713AAB /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		97D509D3FAA3406CB65951F5 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		984E608C5CEF4BA694F26697 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/src/matching2D_Student.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matching2D_Student.cpp; path = src/matching2D_Student.cpp; sourceTree = SOURCE_ROOT; };
+		B3585067B6B1435A8BD3615E /* 2D_feature_tracking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = 2D_feature_tracking; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C71817EFA3B74846B861FC85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28205ECF817D4ABCA17084F0 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				46FEC0DE2C8440D096E98EC0 /* CMake Rules */,
+				95BECCDF6C444116A5713AAB /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		46FEC0DE2C8440D096E98EC0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4BC08A40C4C841F790FB8BC9 = {
+			isa = PBXGroup;
+			children = (
+				ED54964D5FF94633A8F2E12D /* 2D_feature_tracking */,
+				28205ECF817D4ABCA17084F0 /* ALL_BUILD */,
+				E1DEDED5D6444B819CD14BA3 /* Products */,
+				D75C7055E0B749C69E42CE24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA9731C31154D58BFA8198E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F1F194E525249D99D15A847 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/src/MidTermProject_Camera_Student.cpp */,
+				984E608C5CEF4BA694F26697 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/src/matching2D_Student.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D75C7055E0B749C69E42CE24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1DEDED5D6444B819CD14BA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3585067B6B1435A8BD3615E /* 2D_feature_tracking */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED54964D5FF94633A8F2E12D /* 2D_feature_tracking */ = {
+			isa = PBXGroup;
+			children = (
+				9FA9731C31154D58BFA8198E /* Source Files */,
+				97D509D3FAA3406CB65951F5 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/CMakeLists.txt */,
+			);
+			name = 2D_feature_tracking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA69C39E56074F35BA73D9F9 /* 2D_feature_tracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858584021EA240028A96BFA3 /* Build configuration list for PBXNativeTarget "2D_feature_tracking" */;
+			buildPhases = (
+				3BA24155740E472BB13C717C /* Sources */,
+				C71817EFA3B74846B861FC85 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E457A27BF204E9EB1937628 /* PBXTargetDependency */,
+			);
+			name = 2D_feature_tracking;
+			productName = 2D_feature_tracking;
+			productReference = B3585067B6B1435A8BD3615E /* 2D_feature_tracking */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9A369ACD3644AF8973177E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 9311880014964922B61303A5 /* Build configuration list for PBXProject "camera_fusion" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				EBC7A19499364479B4CC8135 /* Debug */,
+				EAF1FCE3A3184999A7FEAB47 /* Release */,
+				92057F7DC6A444F5A973023A /* MinSizeRel */,
+				0F9BDCA202254096BAF6874F /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 4BC08A40C4C841F790FB8BC9;
+			projectDirPath = /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking;
+			projectRoot = "";
+			targets = (
+				913A322062414373BA6755D1 /* ALL_BUILD */,
+				DA69C39E56074F35BA73D9F9 /* 2D_feature_tracking */,
+				4C9423F7D8F943A997C9EB19 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		52809B863BDE2899DF7BFB1B /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E9462ABE8F8319749499C666 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build
+  make -f /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build
+  make -f /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build
+  make -f /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build
+  make -f /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BA24155740E472BB13C717C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BCD68E99F6423CBA63EA40 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/src/MidTermProject_Camera_Student.cpp */,
+				5A130E6B3D8E4CA48FB93A19 /* /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/src/matching2D_Student.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E457A27BF204E9EB1937628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C9423F7D8F943A997C9EB19 /* ZERO_CHECK */;
+			targetProxy = A0D910882E7745F1BD8DC159 /* PBXContainerItemProxy */;
+		};
+		88282DD618234D22AD4BD3FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA69C39E56074F35BA73D9F9 /* 2D_feature_tracking */;
+			targetProxy = 1E0F86220CA84F6CB3472EB6 /* PBXContainerItemProxy */;
+		};
+		EFCEBE7CB1DA4B4F8C9D9B3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C9423F7D8F943A997C9EB19 /* ZERO_CHECK */;
+			targetProxy = F0025A0B29974D2A87226677 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BCE628BD3D14B9B8012D391 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0E080089CF0C42529D675ECE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11'   -std=c++11";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libopencv_gapi.4.8.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.8.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.8.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.8.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.8.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.8.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.8.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.8.0.dylib,/opt/homebrew/lib/libopencv_face.4.8.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.8.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.8.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.8.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.8.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.8.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.8.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.8.0.dylib,/opt/homebrew/lib/libopencv_quality.4.8.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.8.0.dylib,/opt/homebrew/lib/libopencv_reg.4.8.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.8.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.8.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.8.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.8.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.8.0.dylib,/opt/homebrew/lib/libopencv_superres.4.8.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.8.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.8.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.8.0.dylib,/opt/homebrew/lib/libopencv_viz.4.8.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.8.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.8.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.8.0.dylib,/opt/homebrew/lib/libopencv_shape.4.8.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.8.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.8.0.dylib,/opt/homebrew/lib/libopencv_plot.4.8.0.dylib,/opt/homebrew/lib/libopencv_text.4.8.0.dylib,/opt/homebrew/lib/libopencv_ml.4.8.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.8.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.8.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.8.0.dylib,/opt/homebrew/lib/libopencv_video.4.8.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.8.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.8.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.8.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.8.0.dylib,/opt/homebrew/lib/libopencv_flann.4.8.0.dylib,/opt/homebrew/lib/libopencv_photo.4.8.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.8.0.dylib,/opt/homebrew/lib/libopencv_core.4.8.0.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 2D_feature_tracking;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.8.0/include/opencv4,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/build/2D_feature_tracking.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0E8340106FFC4A17BE7D11F4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		226E20D4BE574B0EAC5AF72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11'   -std=c++11";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libopencv_gapi.4.8.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.8.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.8.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.8.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.8.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.8.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.8.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.8.0.dylib,/opt/homebrew/lib/libopencv_face.4.8.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.8.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.8.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.8.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.8.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.8.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.8.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.8.0.dylib,/opt/homebrew/lib/libopencv_quality.4.8.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.8.0.dylib,/opt/homebrew/lib/libopencv_reg.4.8.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.8.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.8.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.8.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.8.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.8.0.dylib,/opt/homebrew/lib/libopencv_superres.4.8.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.8.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.8.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.8.0.dylib,/opt/homebrew/lib/libopencv_viz.4.8.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.8.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.8.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.8.0.dylib,/opt/homebrew/lib/libopencv_shape.4.8.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.8.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.8.0.dylib,/opt/homebrew/lib/libopencv_plot.4.8.0.dylib,/opt/homebrew/lib/libopencv_text.4.8.0.dylib,/opt/homebrew/lib/libopencv_ml.4.8.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.8.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.8.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.8.0.dylib,/opt/homebrew/lib/libopencv_video.4.8.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.8.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.8.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.8.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.8.0.dylib,/opt/homebrew/lib/libopencv_flann.4.8.0.dylib,/opt/homebrew/lib/libopencv_photo.4.8.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.8.0.dylib,/opt/homebrew/lib/libopencv_core.4.8.0.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 2D_feature_tracking;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.8.0/include/opencv4,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/build/2D_feature_tracking.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		30437903FC494A6992B81497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		353AD3801AC944B1B0F73C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11'   -std=c++11";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libopencv_gapi.4.8.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.8.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.8.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.8.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.8.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.8.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.8.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.8.0.dylib,/opt/homebrew/lib/libopencv_face.4.8.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.8.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.8.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.8.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.8.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.8.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.8.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.8.0.dylib,/opt/homebrew/lib/libopencv_quality.4.8.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.8.0.dylib,/opt/homebrew/lib/libopencv_reg.4.8.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.8.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.8.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.8.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.8.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.8.0.dylib,/opt/homebrew/lib/libopencv_superres.4.8.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.8.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.8.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.8.0.dylib,/opt/homebrew/lib/libopencv_viz.4.8.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.8.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.8.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.8.0.dylib,/opt/homebrew/lib/libopencv_shape.4.8.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.8.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.8.0.dylib,/opt/homebrew/lib/libopencv_plot.4.8.0.dylib,/opt/homebrew/lib/libopencv_text.4.8.0.dylib,/opt/homebrew/lib/libopencv_ml.4.8.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.8.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.8.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.8.0.dylib,/opt/homebrew/lib/libopencv_video.4.8.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.8.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.8.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.8.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.8.0.dylib,/opt/homebrew/lib/libopencv_flann.4.8.0.dylib,/opt/homebrew/lib/libopencv_photo.4.8.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.8.0.dylib,/opt/homebrew/lib/libopencv_core.4.8.0.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 2D_feature_tracking;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.8.0/include/opencv4,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/build/2D_feature_tracking.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3B429465B2B642629057E544 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/build;
+			};
+			name = MinSizeRel;
+		};
+		4D15FB3B4800488D9EDA5E09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		56D133FAC99E493B83C79EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/build;
+			};
+			name = Release;
+		};
+		7146906A5B3646888A3B7E7F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		7F7E62B019FD4D56A8E438A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		897F8977C7284AD2B07BA7BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		92F582473CCD45DA89FB37CE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11'   -std=c++11";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libopencv_gapi.4.8.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.8.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.8.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.8.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.8.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.8.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.8.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.8.0.dylib,/opt/homebrew/lib/libopencv_face.4.8.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.8.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.8.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.8.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.8.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.8.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.8.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.8.0.dylib,/opt/homebrew/lib/libopencv_quality.4.8.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.8.0.dylib,/opt/homebrew/lib/libopencv_reg.4.8.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.8.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.8.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.8.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.8.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.8.0.dylib,/opt/homebrew/lib/libopencv_superres.4.8.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.8.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.8.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.8.0.dylib,/opt/homebrew/lib/libopencv_viz.4.8.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.8.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.8.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.8.0.dylib,/opt/homebrew/lib/libopencv_shape.4.8.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.8.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.8.0.dylib,/opt/homebrew/lib/libopencv_plot.4.8.0.dylib,/opt/homebrew/lib/libopencv_text.4.8.0.dylib,/opt/homebrew/lib/libopencv_ml.4.8.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.8.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.8.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.8.0.dylib,/opt/homebrew/lib/libopencv_video.4.8.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.8.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.8.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.8.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.8.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.8.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.8.0.dylib,/opt/homebrew/lib/libopencv_flann.4.8.0.dylib,/opt/homebrew/lib/libopencv_photo.4.8.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.8.0.dylib,/opt/homebrew/lib/libopencv_core.4.8.0.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 2D_feature_tracking;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.8.0/include/opencv4,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/build/2D_feature_tracking.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C7635DAA131B4222BC2564E2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E3C12C401C4148B0AE8B8660 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/build/build;
+			};
+			name = Debug;
+		};
+		EB24728212AA4E089D0A8F8A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		814B939DCBD74C62990C7988 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897F8977C7284AD2B07BA7BB /* Debug */,
+				4D15FB3B4800488D9EDA5E09 /* Release */,
+				0BCE628BD3D14B9B8012D391 /* MinSizeRel */,
+				EB24728212AA4E089D0A8F8A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		858584021EA240028A96BFA3 /* Build configuration list for PBXNativeTarget "2D_feature_tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353AD3801AC944B1B0F73C3A /* Debug */,
+				226E20D4BE574B0EAC5AF72F /* Release */,
+				0E080089CF0C42529D675ECE /* MinSizeRel */,
+				92F582473CCD45DA89FB37CE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9311880014964922B61303A5 /* Build configuration list for PBXProject "camera_fusion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C12C401C4148B0AE8B8660 /* Debug */,
+				56D133FAC99E493B83C79EFB /* Release */,
+				3B429465B2B642629057E544 /* MinSizeRel */,
+				7146906A5B3646888A3B7E7F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C06BCB74C5C04E8DB004A39F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30437903FC494A6992B81497 /* Debug */,
+				7F7E62B019FD4D56A8E438A5 /* Release */,
+				C7635DAA131B4222BC2564E2 /* MinSizeRel */,
+				0E8340106FFC4A17BE7D11F4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9A369ACD3644AF8973177E9 /* Project object */;
+}

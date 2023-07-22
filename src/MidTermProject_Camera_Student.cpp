@@ -18,14 +18,11 @@
 
 using namespace std;
 
-/* MAIN PROGRAM */
 int main(int argc, const char *argv[])
 {
 
-    /* INIT VARIABLES AND DATA STRUCTURES */
-
-    // data location
-    string dataPath = "../";
+    
+    string dataPath = "/Users/ilavaleev/Dev/SFND_2D_Feature_Tracking/";
 
     // camera
     string imgBasePath = dataPath + "images/";
@@ -56,83 +53,65 @@ int main(int argc, const char *argv[])
         img = cv::imread(imgFullFilename);
         cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
 
-        //// STUDENT ASSIGNMENT
-        //// TASK MP.1 -> replace the following code with ring buffer of size dataBufferSize
 
         // push image into data frame buffer
         DataFrame frame;
         frame.cameraImg = imgGray;
+        
         dataBuffer.push_back(frame);
-
-        //// EOF STUDENT ASSIGNMENT
-        cout << "#1 : LOAD IMAGE INTO BUFFER done" << endl;
-
-        /* DETECT IMAGE KEYPOINTS */
-
-        // extract 2D keypoints from current image
+        if (dataBuffer.size() > 2){
+            dataBuffer.erase(dataBuffer.begin());
+        }
+        
         vector<cv::KeyPoint> keypoints; // create empty feature list for current image
-        string detectorType = "SHITOMASI";
+        string detectorType = "FAST"; // FAST, BRISK, ORB, AKAZE, SIFT
 
-        //// STUDENT ASSIGNMENT
-        //// TASK MP.2 -> add the following keypoint detectors in file matching2D.cpp and enable string-based selection based on detectorType
-        //// -> HARRIS, FAST, BRISK, ORB, AKAZE, SIFT
 
-        if (detectorType.compare("SHITOMASI") == 0)
-        {
-            detKeypointsShiTomasi(keypoints, imgGray, false);
-        }
-        else
-        {
-            //...
-        }
-        //// EOF STUDENT ASSIGNMENT
-
-        //// STUDENT ASSIGNMENT
-        //// TASK MP.3 -> only keep keypoints on the preceding vehicle
-
-        // only keep keypoints on the preceding vehicle
+        detKeypointsModern(keypoints, img, detectorType, bVis);
+        
+  
         bool bFocusOnVehicle = true;
         cv::Rect vehicleRect(535, 180, 180, 150);
+        vector<cv::KeyPoint> keypoints_in;
         if (bFocusOnVehicle)
         {
-            // ...
+            for(auto it = keypoints.begin(); it != keypoints.end(); ++it){
+                if(vehicleRect.contains(it->pt)){
+                    keypoints_in.push_back(*it);
+                }
+            }
         }
+        keypoints = keypoints_in;
 
-        //// EOF STUDENT ASSIGNMENT
-
-        // optional : limit number of keypoints (helpful for debugging and learning)
+ 
         bool bLimitKpts = false;
         if (bLimitKpts)
         {
             int maxKeypoints = 50;
 
             if (detectorType.compare("SHITOMASI") == 0)
-            { // there is no response info, so keep the first 50 as they are sorted in descending quality order
+            {
                 keypoints.erase(keypoints.begin() + maxKeypoints, keypoints.end());
             }
             cv::KeyPointsFilter::retainBest(keypoints, maxKeypoints);
-            cout << " NOTE: Keypoints have been limited!" << endl;
+            
         }
 
-        // push keypoints and descriptor for current frame to end of data buffer
+        
         (dataBuffer.end() - 1)->keypoints = keypoints;
-        cout << "#2 : DETECT KEYPOINTS done" << endl;
 
-        /* EXTRACT KEYPOINT DESCRIPTORS */
-
-        //// STUDENT ASSIGNMENT
-        //// TASK MP.4 -> add the following descriptors in file matching2D.cpp and enable string-based selection based on descriptorType
-        //// -> BRIEF, ORB, FREAK, AKAZE, SIFT
-
+        //"BRISK", "BRIEF", "ORB", "FREAK", "AKAZE", "SIFT"
         cv::Mat descriptors;
-        string descriptorType = "BRISK"; // BRIEF, ORB, FREAK, AKAZE, SIFT
+        string descriptorType = "SIFT";
+        
+        
         descKeypoints((dataBuffer.end() - 1)->keypoints, (dataBuffer.end() - 1)->cameraImg, descriptors, descriptorType);
-        //// EOF STUDENT ASSIGNMENT
+        
 
-        // push descriptors for current frame to end of data buffer
+        
         (dataBuffer.end() - 1)->descriptors = descriptors;
 
-        cout << "#3 : EXTRACT DESCRIPTORS done" << endl;
+            
 
         if (dataBuffer.size() > 1) // wait until at least two images have been processed
         {
@@ -140,26 +119,16 @@ int main(int argc, const char *argv[])
             /* MATCH KEYPOINT DESCRIPTORS */
 
             vector<cv::DMatch> matches;
-            string matcherType = "MAT_BF";        // MAT_BF, MAT_FLANN
+            string matcherType = "MAT_FLANN";        // MAT_BF, MAT_FLANN
             string descriptorType = "DES_BINARY"; // DES_BINARY, DES_HOG
-            string selectorType = "SEL_NN";       // SEL_NN, SEL_KNN
+            string selectorType = "SEL_KNN";       // SEL_NN, SEL_KNN
 
-            //// STUDENT ASSIGNMENT
-            //// TASK MP.5 -> add FLANN matching in file matching2D.cpp
-            //// TASK MP.6 -> add KNN match selection and perform descriptor distance ratio filtering with t=0.8 in file matching2D.cpp
-
+            
             matchDescriptors((dataBuffer.end() - 2)->keypoints, (dataBuffer.end() - 1)->keypoints,
                              (dataBuffer.end() - 2)->descriptors, (dataBuffer.end() - 1)->descriptors,
                              matches, descriptorType, matcherType, selectorType);
-
-            //// EOF STUDENT ASSIGNMENT
-
-            // store matches in current data frame
             (dataBuffer.end() - 1)->kptMatches = matches;
 
-            cout << "#4 : MATCH KEYPOINT DESCRIPTORS done" << endl;
-
-            // visualize matches between current and previous image
             bVis = true;
             if (bVis)
             {
@@ -173,7 +142,7 @@ int main(int argc, const char *argv[])
                 string windowName = "Matching keypoints between two camera images";
                 cv::namedWindow(windowName, 7);
                 cv::imshow(windowName, matchImg);
-                cout << "Press key to continue to next image" << endl;
+                
                 cv::waitKey(0); // wait for key to be pressed
             }
             bVis = false;
